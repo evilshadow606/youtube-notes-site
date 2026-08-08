@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Installation and troubleshooting help for the YouTube Notes Chrome extension.">
+    <title>Support — YouTube Notes</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="YouTube Notes home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>YouTube Notes</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="support.html" aria-current="page">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="shell document-page">
+      <header class="document-header">
+        <p class="eyebrow">Help center</p>
+        <h1>YouTube Notes Support</h1>
+        <p class="lead">Quick fixes for installation, the on-page panel, notes, timestamps, copying, and exports.</p>
+      </header>
+
+      <nav class="topic-nav" aria-label="Support topics">
+        <a href="#panel">Panel</a>
+        <a href="#notes">Notes</a>
+        <a href="#timestamps">Timestamps</a>
+        <a href="#copy-export">Copy &amp; export</a>
+        <a href="#navigation">Navigation</a>
+        <a href="#report">Report a bug</a>
+      </nav>
+
+      <div class="support-grid">
+        <section class="support-card" id="panel">
+          <h2>The panel does not appear</h2>
+          <ol>
+            <li>Confirm you are on a standard <code>https://www.youtube.com/watch?v=...</code> video page.</li>
+            <li>Refresh the YouTube tab after installing or reloading the extension.</li>
+            <li>Open the extension popup and select <strong>Open Notes</strong>.</li>
+            <li>Look for the small dark <strong>N</strong> restore button near the lower-right edge.</li>
+            <li>Check the extension card at <code>chrome://extensions</code> for reported errors.</li>
+          </ol>
+        </section>
+
+        <section class="support-card">
+          <h2>Open Notes from the popup</h2>
+          <p>On a supported video page, the popup shows the current note count. Select <strong>Open Notes</strong> to restore, reveal, and focus the full panel. If the popup asks you to refresh, refresh the video page once.</p>
+        </section>
+
+        <section class="support-card">
+          <h2>Restore a minimized panel</h2>
+          <p>Select the small <strong>N</strong> button on the YouTube page, or use <strong>Open Notes</strong> in the extension popup. Restoring updates the saved panel preference.</p>
+        </section>
+
+        <section class="support-card" id="notes">
+          <h2>Notes are not saving</h2>
+          <ul>
+            <li>Make sure the note contains non-whitespace text.</li>
+            <li>Wait for the video player to finish loading before opening the composer.</li>
+            <li>Do not navigate to another video before saving.</li>
+            <li>Reload the extension and refresh the YouTube tab if the problem persists.</li>
+          </ul>
+          <p>A failed save should leave your composer text available so you can try again.</p>
+        </section>
+
+        <section class="support-card" id="timestamps">
+          <h2>Timestamps do not seek correctly</h2>
+          <p>Confirm the video player is available and the page is still showing the video associated with the note. Browser autoplay policy may prevent playback from starting, but seeking should still occur. Refresh the page if YouTube’s player is unresponsive.</p>
+        </section>
+
+        <section class="support-card">
+          <h2>Search does not show an expected note</h2>
+          <p>Search applies only to notes for the current video. Clear the search field or press Escape while it is focused to restore the full current-video list. Search does not look across other videos.</p>
+        </section>
+
+        <section class="support-card" id="copy-export">
+          <h2>Copy to clipboard fails</h2>
+          <p>Keep the YouTube tab active and try again. Chrome, the operating system, or an organization policy may block clipboard access. The extension reports the failure without changing your note.</p>
+        </section>
+
+        <section class="support-card">
+          <h2>An export does not download</h2>
+          <ul>
+            <li>Confirm the current video has at least one saved note.</li>
+            <li>Check Chrome’s download indicator and configured download folder.</li>
+            <li>Check whether your browser or organization blocks downloads.</li>
+          </ul>
+          <p>Exports include all notes for the current video even when search is active.</p>
+        </section>
+
+        <section class="support-card" id="navigation">
+          <h2>YouTube navigation shows the wrong state</h2>
+          <p>YouTube often changes videos without a full page reload. YouTube Notes listens for this navigation and reloads the correct note list. If the page appears stale, refresh the tab. Your minimized preference continues across video navigation.</p>
+        </section>
+
+        <section class="support-card">
+          <h2>Reload the extension</h2>
+          <ol>
+            <li>Open <code>chrome://extensions</code>.</li>
+            <li>Find YouTube Notes and select its reload button.</li>
+            <li>Refresh every open YouTube tab.</li>
+          </ol>
+        </section>
+
+        <section class="support-card warning-card">
+          <h2>Reinstall only as a last resort</h2>
+          <p>Uninstalling may remove locally stored notes. Export important notes before reinstalling. Try reloading the extension and refreshing YouTube first.</p>
+        </section>
+
+        <section class="support-card report-card" id="report">
+          <h2>Report a bug</h2>
+          <p>Users will be able to report issues through the project’s GitHub repository once the public repository and support link are available.</p>
+          <!-- Replace this paragraph with a descriptive GitHub issue link when the public repository URL is known. -->
+          <p class="link-placeholder"><strong>GitHub issue link:</strong> To be added before publication.</p>
+          <p>A useful report includes the Chrome, operating-system, and extension versions; exact reproduction steps; expected and actual behavior; relevant video URLs when safe to share; and extension errors from <code>chrome://extensions</code>. Remove private note content from screenshots.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer compact-footer">
+      <div class="shell footer-grid">
+        <p>© 2026 YouTube Notes contributors</p>
+        <div class="footer-links"><a href="index.html">Home</a><a href="privacy-policy.html">Privacy Policy</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
